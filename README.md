@@ -1,9 +1,15 @@
-# Everstead contractor website
+# BT Renovation Solutions — redesign pitch
 
-A responsive Calgary contractor website concept built with plain HTML, CSS, and JavaScript. No package installation is required. Requires Node.js 18 or later.
+A responsive, unofficial redesign concept for BT Renovation Solutions in Calgary, built with HTML, CSS, and JavaScript. Node.js 18+; no dependency installation required.
 
-Run `npm run dev` to serve on port 3000. Set `PORT` to override. Run `npm run check` for JavaScript syntax validation.
+Run `npm run dev` to serve on port 3000 (`PORT` overrides it). Run `npm run check` for JavaScript syntax checks. The static files also work with GitHub Pages from the main branch root.
 
-To adapt for a contractor, replace the sample Everstead brand and service-area copy in index.html, update the colours in style.css, and replace the Unsplash inspiration images with approved project photography. Fonts and photos currently load from external services.
+## Content and design
 
-The quote form is an interactive demo: it does not send or store submissions. Connect a real submission endpoint and update the demo notices before publishing. Add the contractor’s verified contact details, privacy information, and any substantiated credentials. Inspiration images are explicitly labelled and no customer reviews or business credentials are invented.
+Business name, tagline, contact details, services, founder history, and customer testimonial excerpts come from the existing website text supplied by the user. Reviews retain their original wording within selected excerpts; there are no invented ratings. The charcoal, warm ivory, and brass palette is a proposed design direction, not a verified match to the original site's colours.
+
+All photographs are external Unsplash design inspiration, not completed BT projects. Replace them with approved project photography before presenting them as portfolio work. Fonts load from Google Fonts. No Facebook URL was supplied, so no Facebook link is invented.
+
+The quote form prepares a visible request preview and a mailto draft addressed to btrenovationsolutions@gmail.com. It does not send, store, or silently transmit submissions. Visitors must open their configured email app and send, or use the phone/email links. A production form endpoint can be connected later.
+
+This is a pitch concept, not the client's official website. Confirm content, images, contact details, and permissions with the business before an official launch.

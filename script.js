@@ -20,6 +20,17 @@ document.querySelector('#quote-form').addEventListener('submit', event => {
   const data = new FormData(event.currentTarget);
   const result = document.querySelector('#form-result');
   result.hidden = false;
-  result.textContent = `Thanks, ${data.get('name')}! Your ${data.get('service').toLowerCase()} request is ready to preview. This is a demonstration website, so your information has not been sent or stored. Connect this form to the contractor’s inbox before publishing.`;
+  result.replaceChildren();
+  const summary = document.createElement('p');
+  const body = `Hello Breanna,\n\nI'd like a quote for: ${data.get('service')}\n\n${data.get('message')}\n\nName: ${data.get('name')}\nEmail: ${data.get('email')}\nPhone: ${data.get('phone') || 'Not provided'}`;
+  summary.textContent = body;
+  const link = document.createElement('a');
+  link.className = 'email-draft';
+  link.textContent = 'Open email app to send request ↗';
+  link.href = `mailto:btrenovationsolutions@gmail.com?subject=${encodeURIComponent('Quote request: ' + data.get('service'))}&body=${encodeURIComponent(body)}`;
+  const note = document.createElement('span');
+  note.className = 'form-edit-note';
+  note.textContent = 'Nothing has been sent. Review and send in your email app, or call 403-436-0087.';
+  result.append(summary, link, note);
   result.focus();
 });
