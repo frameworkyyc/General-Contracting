@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <meta name="description" content="Basements, bathrooms, flooring, decks and fences for Calgary homes. Independent Framework website concept.">
-<meta name="demo-revision" content="service-specific-v2">
+<meta name="demo-revision" content="business-branding-v3">
 <title>Kings Renovations Ltd. | home renovations &amp; outdoor projects | Calgary</title>
 <link rel="stylesheet" href="style.css">
 <style>
@@ -24,10 +24,53 @@ footer svg { flex-shrink: 0; }
   footer h2 { font-size: clamp(2rem, 9vw, 3rem); overflow-wrap: anywhere; }
 }
 </style>
+<style id="business-theme">
+/* Palette and typography direction inspired by the verified logo at https://www.homestars.com/profile/2988758-kings-renovations-ltd/reviews */
+:root { --ink:#201d17; --paper:#faf8f0; --pine:#191814; --clay:#d6c080; }
+body { background:#faf8f0; color:#201d17; }
+.bar { background:#fff; border-bottom:1px solid #eee8d5; padding-block:14px; }
+.brand { display:flex; align-items:center; gap:12px; text-decoration:none; letter-spacing:0; min-width:0; }
+.brand-copy { display:flex; flex-direction:column; gap:5px; min-width:0; }
+.brand-title { font-family:Georgia, 'Times New Roman', serif; font-size:clamp(1.15rem,2vw,1.55rem); font-weight:500; line-height:1.12; }
+.brand-detail { font-size:.65rem; font-weight:600; letter-spacing:.06em; line-height:1.5; }
+.brand-logo { display:block; width:166px; height:94px; object-fit:contain; }
+.brand-logo-kings { width:76px; height:88px; }
+.brand-logo-blueform { width:180px; height:104px; }
+.brand-logo-serenity { width:148px; height:98px; }
+.brand-logo-smart { width:166px; height:106px; }
+main h1, main h2 { font-family:Georgia, 'Times New Roman', serif; font-weight:500; }
+main h2 { letter-spacing:-.035em; }
+.hero { background:#191814; }
+.hero::after { background:linear-gradient(90deg,#191814f5,#191814cf 40%,#19181440); }
+.hero h1 { max-width:16ch; }
+.tag { color:#776027; }
+.hero .tag, .estimate .tag { color:#ebdcae; }
+main .button { background:#d6c080; color:#191814; border-radius:1px; }
+main a.button:hover { background:#d6c080; filter:brightness(.93); }
+main .button:disabled { background:#eee8d5; color:#201d17; filter:none; }
+a:focus-visible { outline:3px solid #776027; outline-offset:5px; }
+.hero a:focus-visible, footer a:focus-visible { outline-color:#fff; }
+.materials { background:#eee8d5; }
+.services article, .choices article { border-color:#d6c080; }
+.brand-story { background:#faf8f0; border-bottom:1px solid #eee8d5; }
+.brand-story-inner { display:grid; grid-template-columns:1fr 2fr; gap:24px; align-items:center; padding-block:28px; }
+.brand-story-inner p { margin:0; }
+.brand-story-inner > p:last-child { font-size:.94rem; max-width:70ch; }
+.estimate { background:#191814; color:#faf8f0; }
+.credit { background:#191814; color:#fff; }
+
+@media (max-width:620px) {
+ .brand-story-inner { grid-template-columns:1fr; gap:12px; padding-block:24px; }
+ .brand { max-width:100%; }
+ .brand-copy { flex:1; }
+ .brand-logo-kings { width:60px; height:70px; flex-shrink:0; }
+ .hero::after { background:linear-gradient(90deg,#191814f2,#191814a6); }
+}
+</style>
 </head>
 <body>
 <header class="bar">
-<a class="brand" href="#top">Kings Renovations Ltd.</a>
+<a class="brand" href="#top"><img class="brand-logo brand-logo-kings" src="logo.jpg" alt="Kings Renovations Ltd."><span class="brand-copy"><span class="brand-title">Kings Renovations</span><span class="brand-detail">Homes · Basements · Backyards</span></span></a>
 <nav aria-label="Main"><a href="#services">Services</a><a href="#materials">Planning</a><a href="#inspiration">Ideas</a></nav>
 </header>
 <main id="top">
@@ -35,15 +78,16 @@ footer svg { flex-shrink: 0; }
 <img src="hero.jpg" alt="" fetchpriority="high">
 <div class="wrap hero-copy">
 <p class="tag">CALGARY, ALBERTA <span> / </span> HOME RENOVATIONS &amp; OUTDOOR PROJECTS</p>
-<h1 id="headline">A better fit for the way you live.</h1>
+<h1 id="headline">Make your home worthy of its name.</h1>
 <p>Basements, bathrooms, flooring, decks and fences for Calgary homes.</p>
 <a class="button" href="#estimate">Request an estimate <span aria-hidden="true">↗</span></a>
 </div>
 <p class="credit">AI-generated design inspiration</p>
 </section>
+<aside class="brand-story"><div class="wrap brand-story-inner"><p class="tag">A HOME, CONSIDERED AS A WHOLE</p><p>Kings Renovations works across interior renovations and outdoor projects. Bring the basement, bathroom, flooring or fence into one conversation about how you want your home to work.</p></div></aside>
 <section class="wrap section" id="services">
 <p class="tag">01 / SERVICES</p>
-<h2>Make the next improvement count.</h2>
+<h2>From downstairs to the backyard.</h2>
 <div class="grid services">
 <article><p class="tag">01</p><h3>Basements</h3><p>Make room for living, working or storage downstairs.</p></article>
 <article><p class="tag">02</p><h3>Bathrooms &amp; flooring</h3><p>Bring the finishes together, from tiled surfaces to transitions between rooms.</p></article>
