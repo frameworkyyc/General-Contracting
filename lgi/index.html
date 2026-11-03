@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="A website concept for LGI Tiling Specialist, a Calgary tile and renovation business.">
+<title>LGI Tiling Specialist | Calgary Tile &amp; Bathroom Renovations</title>
+<style>
+:root{--ink:#201f1a;--paper:#f7f4eb;--gold:#f2ca53;--line:#d6cfbf}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.6 system-ui,sans-serif}
+a{color:inherit;text-underline-offset:.25em}
+a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #937000;outline-offset:4px}
+h1,h2,h3,p,figure{margin:0}
+h1,h2{font-family:Georgia,serif;font-weight:500;line-height:1.01;letter-spacing:-.05em}
+h1{font-size:clamp(3.1rem,8vw,7.6rem);max-width:10ch}
+h2{font-size:clamp(2.6rem,5.8vw,5.3rem);max-width:15ch}
+h3{font-size:1.32rem;line-height:1.2}
+p{max-width:56ch}
+.wrap{width:min(1160px,calc(100% - 2.5rem));margin:auto}
+.bar{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding-block:1rem}
+.brand{display:flex;align-items:center;gap:.85rem;text-decoration:none;font-weight:800;line-height:1.1}
+.brand small{display:block;font-size:.72rem;margin-top:.25rem;letter-spacing:.08em;text-transform:uppercase}
+nav{display:flex;flex-wrap:wrap;gap:.6rem 1.5rem;font-weight:650;font-size:.9rem}
+.hero{position:relative;isolation:isolate;background:#302c22;color:white;display:grid;align-items:center;min-height:620px}
+.hero img,.hero::after{position:absolute;inset:0;width:100%;height:100%;z-index:-1}
+.hero img{object-fit:cover;object-position:58% 54%}
+.hero::after{content:"";background:linear-gradient(90deg,rgba(20,18,13,.94),rgba(20,18,13,.73) 45%,rgba(20,18,13,.12))}
+.hero-copy{padding-block:5rem}
+.hero-copy>p:not(.tag){font-size:1.15rem;margin-top:1.3rem;max-width:38ch}
+.tag{font-size:.74rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;margin-bottom:1rem}
+.hero .tag{color:var(--gold)}
+.credit{position:absolute;bottom:1rem;right:1rem;background:#201f1a;color:white;padding:.2rem .65rem;font-size:.75rem}
+.button{display:inline-flex;align-items:center;gap:1rem;margin-top:1.5rem;padding:.85rem 1.2rem;background:var(--gold);color:#201f1a;text-decoration:none;font:inherit;font-weight:800;border:1px solid transparent}
+.button:hover{background:#ffdf77}
+.section{padding-block:clamp(3.5rem,8vw,7rem)}
+.intro{margin-top:1.1rem}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin-top:2rem}
+.card{border:1px solid var(--line);padding:1.4rem;background:#fffdf7}
+.card h3{margin-bottom:.6rem}
+.band{background:#eee8d8}
+.sample{height:112px;margin-bottom:1.1rem;border:1px solid #c1b7a3}
+.stone{background:repeating-linear-gradient(90deg,#d8ccbc 0 31%,#f2eadc 31% 32%);background-size:130px 100%}
+.stack{background:repeating-linear-gradient(0deg,transparent 0 23px,#f2eadb 23px 25px),repeating-linear-gradient(90deg,#6c7c63 0 47px,#f2eadb 47px 49px)}
+.mosaic{background:repeating-linear-gradient(90deg,transparent 0 17px,#ebe4d6 17px 19px),repeating-linear-gradient(0deg,#8a7962 0 17px,#ebe4d6 17px 19px)}
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(1.5rem,5vw,5rem);align-items:start}
+.split img{width:100%;display:block;aspect-ratio:4/3;object-fit:cover}
+figcaption{font-size:.82rem;margin-top:.5rem}
+.estimate{background:#211f19;color:#fff}
+.estimate .tag{color:var(--gold)}
+.contact{margin-top:1rem;overflow-wrap:anywhere}
+form{display:grid;gap:1rem;padding:clamp(1rem,4vw,2rem);background:var(--paper);color:var(--ink)}
+label{display:grid;gap:.3rem;font-weight:700}
+input,select,textarea{width:100%;min-width:0;border:1px solid #958b77;background:white;color:var(--ink);border-radius:0;padding:.65rem;font:inherit}
+textarea{resize:vertical}
+button:disabled{background:#e6dfcd;color:#514b3f;margin-top:0;justify-self:start}
+footer{background:#0a0a0a;color:white}
+footer h2{font:750 clamp(2.2rem,5vw,4.25rem)/1.04 system-ui,sans-serif;letter-spacing:-.055em;max-width:19ch;margin:.65em 0 .35em}
+footer .button{background:white}
+.fine{border-top:1px solid #666;margin-top:2rem;padding-top:1rem;color:#ddd;max-width:none;font-size:.85rem}
+@media(max-width:680px){.grid,.split{grid-template-columns:1fr}.bar{align-items:flex-start;flex-direction:column}.hero{min-height:500px}.hero::after{background:linear-gradient(90deg,rgba(20,18,13,.92),rgba(20,18,13,.55))}}
+</style>
+</head>
+<body>
+<header class="wrap bar">
+<a class="brand" href="#top"><svg width="34" height="34" viewBox="0 0 40 40" aria-hidden="true"><path fill="#f2ca53" d="M20 0 40 20 20 40 0 20Z"/><path fill="#201f1a" d="M20 8 32 20 20 32 8 20Z"/><path fill="#f2ca53" d="M20 16 24 20 20 24 16 20Z"/></svg><span>LGI<small>Tiling Specialist</small></span></a>
+<nav aria-label="Main navigation"><a href="#services">Services</a><a href="#details">Tile ideas</a><a href="#estimate">Request a quote</a></nav>
+</header>
+<main id="top">
+<section class="hero" aria-labelledby="headline">
+<img src="https://raw.githubusercontent.com/frameworkyyc/General-Contracting/46fd9e3e7ad7ebbcfcdc0a0c75e132f4f482cc09/ball/hero.jpg" alt="" fetchpriority="high">
+<div class="wrap hero-copy"><p class="tag">Calgary, Alberta · Tile &amp; renovations</p>
+<h1 id="headline">Good tile work shows.</h1>
+<p>From a kitchen backsplash to a full bathroom renovation, bring the room together with tile that suits how you use it.</p>
+<a class="button" href="#estimate">Request a quote <span aria-hidden="true">↗</span></a>
+</div><p class="credit">AI-generated design inspiration</p>
+</section>
+<section class="wrap section" id="services">
+<p class="tag">01 / Services</p><h2>From a single wall to a whole room.</h2>
+<div class="grid">
+<article class="card"><p class="tag">01 / Bathrooms</p><h3>Showers &amp; bathroom renovations</h3><p>Plan the shower walls, niche and floor together so the finishes feel at home in the same room.</p></article>
+<article class="card"><p class="tag">02 / Kitchens</p><h3>Backsplashes &amp; kitchen tile</h3><p>Choose a tile layout that works with your counters, cabinets and the outlets you use every day.</p></article>
+<article class="card"><p class="tag">03 / Floors</p><h3>Floor tile &amp; tile replacement</h3><p>Update an entry or floor, or get advice on replacing damaged tile where the surrounding finish is staying.</p></article>
+</div></section>
+<section class="band" id="details"><div class="wrap section">
+<p class="tag">02 / Tile ideas</p><h2>The details you see every day.</h2>
+<p class="intro">Three starting points for your project. Bring a photo or sample to help narrow down the look.</p>
+<div class="grid">
+<article class="card"><div class="sample stone" aria-hidden="true"></div><h3>Large format porcelain</h3><p>Fewer grout lines and a quieter look for a bathroom wall or floor.</p></article>
+<article class="card"><div class="sample stack" aria-hidden="true"></div><h3>Stacked wall tile</h3><p>A clean grid that gives a backsplash or shower wall a distinct rhythm.</p></article>
+<article class="card"><div class="sample mosaic" aria-hidden="true"></div><h3>Mosaic accents</h3><p>A smaller scale for a niche or feature strip. For shower floors, check that the tile is rated for the application.</p></article>
+</div></div></section>
+<section class="wrap section split">
+<div><p class="tag">03 / Design inspiration</p><h2>Start with the room you have.</h2>
+<p class="intro">Warm wood, a simple tile field and dark hardware give this bathroom a clear palette. For your own project, start with photos of the existing room and decide what you’d like to keep.</p></div>
+<figure><img src="https://raw.githubusercontent.com/frameworkyyc/General-Contracting/46fd9e3e7ad7ebbcfcdc0a0c75e132f4f482cc09/ball/hero.jpg" alt="Bathroom concept with an oak vanity, light tile and dark fixtures" loading="lazy"><figcaption>AI-generated design inspiration. Shown as a design idea.</figcaption></figure>
+</section>
+<section class="estimate" id="estimate"><div class="wrap section split">
+<div><p class="tag">04 / Your project</p><h2>Request a quote.</h2>
+<p class="intro">A Calgary neighbourhood, rough dimensions and a couple of photos are a useful starting point. Let LGI know whether you’re replacing tile or renovating the room.</p>
+<p class="contact"><a href="tel:+14039693102">403-969-3102</a><br><a href="mailto:tile.setting@gmail.com">tile.setting@gmail.com</a></p></div>
+<form aria-label="Example quote form" aria-describedby="form-note">
+<label>Your name<input autocomplete="name"></label>
+<label>Email<input type="email" autocomplete="email"></label>
+<label>Project type<select><option value="">Choose a project type</option><option>Bathroom or shower</option><option>Kitchen or backsplash</option><option>Floor tile</option><option>Tile repair or replacement</option></select></label>
+<label>Tell us about your project<textarea rows="3" placeholder="Neighbourhood, room size and what you’d like to change"></textarea></label>
+<button type="button" class="button" disabled>Request a quote</button>
+<small id="form-note">Demo form. Submission is disabled.</small>
+</form></div></section>
+</main>
+<footer><div class="wrap section">
+<a class="brand" href="https://frameworkco.ca/"><svg width="50" height="50" viewBox="0 0 1092 1092" aria-hidden="true"><rect width="1092" height="1092" fill="#fff"/><path fill="#0a0a0a" d="M302 245H815V347H411V741L302 851ZM435 517L512 440H815V545H534V842H435Z"/></svg>Created by Framework</a>
+<h2>Like this website? Let’s make it yours.</h2>
+<p>Framework builds websites for Calgary contractors. Let’s put your tile work front and centre and make it easier for homeowners to request a quote.</p>
+<a class="button" href="https://frameworkco.ca/contact.html">Talk to Framework <span aria-hidden="true">↗</span></a>
+<p class="fine">Independent Framework website concept for LGI Tiling Specialist · Calgary, AB</p>
+</div></footer>
+</body>
+</html>
