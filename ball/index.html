@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <meta name="description" content="Tile, laminate flooring and practical home improvements in Calgary. Independent Framework website concept.">
-<meta name="demo-revision" content="service-specific-v2">
+<meta name="demo-revision" content="business-branding-v3">
 <title>Smart Choice Handyman Services Ltd. | tiling, flooring &amp; handyman services | Calgary</title>
 <link rel="stylesheet" href="style.css">
 <style>
@@ -24,10 +24,53 @@ footer svg { flex-shrink: 0; }
   footer h2 { font-size: clamp(2rem, 9vw, 3rem); overflow-wrap: anywhere; }
 }
 </style>
+<style id="business-theme">
+/* Palette and typography direction inspired by the verified logo at https://www.homestars.com/profile/smart-choice-handyman-services-ltd/reviews */
+:root { --ink:#30312e; --paper:#fbfbf7; --pine:#3e3f3b; --clay:#f8d323; }
+body { background:#fbfbf7; color:#30312e; }
+.bar { background:#fff; border-bottom:1px solid #f0f0e8; padding-block:14px; }
+.brand { display:flex; align-items:center; gap:12px; text-decoration:none; letter-spacing:0; min-width:0; }
+.brand-copy { display:flex; flex-direction:column; gap:5px; min-width:0; }
+.brand-title { font-family:'Arial Narrow', Arial, sans-serif; font-size:clamp(1.15rem,2vw,1.55rem); font-weight:800; line-height:1.12; }
+.brand-detail { font-size:.65rem; font-weight:600; letter-spacing:.06em; line-height:1.5; }
+.brand-logo { display:block; width:166px; height:94px; object-fit:contain; }
+.brand-logo-kings { width:76px; height:88px; }
+.brand-logo-blueform { width:180px; height:104px; }
+.brand-logo-serenity { width:148px; height:98px; }
+.brand-logo-smart { width:166px; height:106px; }
+main h1, main h2 { font-family:'Arial Narrow', Arial, sans-serif; font-weight:800; }
+main h2 { letter-spacing:-.035em; }
+.hero { background:#3e3f3b; }
+.hero::after { background:linear-gradient(90deg,#3e3f3bf5,#3e3f3bcf 40%,#3e3f3b40); }
+.hero h1 { max-width:16ch; }
+.tag { color:#676018; }
+.hero .tag, .estimate .tag { color:#f8d323; }
+main .button { background:#f8d323; color:#252622; border-radius:4px; }
+main a.button:hover { background:#f8d323; filter:brightness(.93); }
+main .button:disabled { background:#f0f0e8; color:#30312e; filter:none; }
+a:focus-visible { outline:3px solid #676018; outline-offset:5px; }
+.hero a:focus-visible, footer a:focus-visible { outline-color:#fff; }
+.materials { background:#f0f0e8; }
+.services article, .choices article { border-color:#f8d323; }
+.brand-story { background:#fbfbf7; border-bottom:1px solid #f0f0e8; }
+.brand-story-inner { display:grid; grid-template-columns:1fr 2fr; gap:24px; align-items:center; padding-block:28px; }
+.brand-story-inner p { margin:0; }
+.brand-story-inner > p:last-child { font-size:.94rem; max-width:70ch; }
+.estimate { background:#3e3f3b; color:#fbfbf7; }
+.credit { background:#3e3f3b; color:#fff; }
+.bar { background:#3e3f3b; color:white; } .hero h1, main h2 { font-style:italic; }
+@media (max-width:620px) {
+ .brand-story-inner { grid-template-columns:1fr; gap:12px; padding-block:24px; }
+ .brand { max-width:100%; }
+ .brand-copy { flex:1; }
+ .brand-logo-kings { width:60px; height:70px; flex-shrink:0; }
+ .hero::after { background:linear-gradient(90deg,#3e3f3bf2,#3e3f3ba6); }
+}
+</style>
 </head>
 <body>
 <header class="bar">
-<a class="brand" href="#top">Smart Choice Handyman Services Ltd.</a>
+<a class="brand" href="#top"><img class="brand-logo brand-logo-smart" src="logo.png" alt="Smart Choice Handyman Services Ltd."></a>
 <nav aria-label="Main"><a href="#services">Services</a><a href="#materials">Planning</a><a href="#inspiration">Ideas</a></nav>
 </header>
 <main id="top">
@@ -35,15 +78,16 @@ footer svg { flex-shrink: 0; }
 <img src="hero.jpg" alt="" fetchpriority="high">
 <div class="wrap hero-copy">
 <p class="tag">CALGARY, ALBERTA <span> / </span> TILING, FLOORING &amp; HANDYMAN SERVICES</p>
-<h1 id="headline">Fresh floors. Finished details.</h1>
+<h1 id="headline">A smart start to your next fix.</h1>
 <p>Tile, laminate flooring and practical home improvements in Calgary.</p>
 <a class="button" href="#estimate">Request an estimate <span aria-hidden="true">↗</span></a>
 </div>
 <p class="credit">AI-generated design inspiration</p>
 </section>
+<aside class="brand-story"><div class="wrap brand-story-inner"><p class="tag">SMART CHOICE HANDYMAN</p><p>From a tiled wall to a new laminate floor, Smart Choice brings several kinds of home improvement into one place. Start with the larger job, then include the smaller fixes on your list.</p></div></aside>
 <section class="wrap section" id="services">
 <p class="tag">01 / SERVICES</p>
-<h2>Make the next improvement count.</h2>
+<h2>The floor. The finish. The little things.</h2>
 <div class="grid services">
 <article><p class="tag">01</p><h3>Wall &amp; floor tiling</h3><p>Plan tiled surfaces around the size of the room and the look you want.</p></article>
 <article><p class="tag">02</p><h3>Laminate flooring</h3><p>Update the floor and consider thresholds, edges and transitions together.</p></article>
