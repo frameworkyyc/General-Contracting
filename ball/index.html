@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <meta name="description" content="Practical help with small home projects and installation enquiries. Independent Framework website concept.">
-<meta name="demo-revision" content="service-specific-v2">
+<meta name="demo-revision" content="business-branding-v3">
 <title>Daniel Mezbein | calgary handyman services | Calgary</title>
 <link rel="stylesheet" href="style.css">
 <style>
@@ -24,10 +24,53 @@ footer svg { flex-shrink: 0; }
   footer h2 { font-size: clamp(2rem, 9vw, 3rem); overflow-wrap: anywhere; }
 }
 </style>
+<style id="business-theme">
+/* Proposed identity direction based on the business's documented specialty. */
+:root { --ink:#20313d; --paper:#fcfdfd; --pine:#183b56; --clay:#176191; }
+body { background:#fcfdfd; color:#20313d; }
+.bar { background:#fff; border-bottom:1px solid #e9f0f5; padding-block:14px; }
+.brand { display:flex; align-items:center; gap:12px; text-decoration:none; letter-spacing:0; min-width:0; }
+.brand-copy { display:flex; flex-direction:column; gap:5px; min-width:0; }
+.brand-title { font-family:'Segoe UI', Arial, sans-serif; font-size:clamp(1.15rem,2vw,1.55rem); font-weight:700; line-height:1.12; }
+.brand-detail { font-size:.65rem; font-weight:600; letter-spacing:.06em; line-height:1.5; }
+.brand-logo { display:block; width:166px; height:94px; object-fit:contain; }
+.brand-logo-kings { width:76px; height:88px; }
+.brand-logo-blueform { width:180px; height:104px; }
+.brand-logo-serenity { width:148px; height:98px; }
+.brand-logo-smart { width:166px; height:106px; }
+main h1, main h2 { font-family:'Segoe UI', Arial, sans-serif; font-weight:700; }
+main h2 { letter-spacing:-.035em; }
+.hero { background:#183b56; }
+.hero::after { background:linear-gradient(90deg,#183b56f5,#183b56cf 40%,#183b5640); }
+.hero h1 { max-width:16ch; }
+.tag { color:#16557d; }
+.hero .tag, .estimate .tag { color:#c7e8fa; }
+main .button { background:#176191; color:#ffffff; border-radius:10px; }
+main a.button:hover { background:#176191; filter:brightness(.93); }
+main .button:disabled { background:#e9f0f5; color:#20313d; filter:none; }
+a:focus-visible { outline:3px solid #16557d; outline-offset:5px; }
+.hero a:focus-visible, footer a:focus-visible { outline-color:#fff; }
+.materials { background:#e9f0f5; }
+.services article, .choices article { border-color:#176191; }
+.brand-story { background:#fcfdfd; border-bottom:1px solid #e9f0f5; }
+.brand-story-inner { display:grid; grid-template-columns:1fr 2fr; gap:24px; align-items:center; padding-block:28px; }
+.brand-story-inner p { margin:0; }
+.brand-story-inner > p:last-child { font-size:.94rem; max-width:70ch; }
+.estimate { background:#183b56; color:#fcfdfd; }
+.credit { background:#183b56; color:#fff; }
+
+@media (max-width:620px) {
+ .brand-story-inner { grid-template-columns:1fr; gap:12px; padding-block:24px; }
+ .brand { max-width:100%; }
+ .brand-copy { flex:1; }
+ .brand-logo-kings { width:60px; height:70px; flex-shrink:0; }
+ .hero::after { background:linear-gradient(90deg,#183b56f2,#183b56a6); }
+}
+</style>
 </head>
 <body>
 <header class="bar">
-<a class="brand" href="#top">Daniel Mezbein</a>
+<a class="brand" href="#top"><span class="brand-copy"><span class="brand-title">Daniel Mezbein</span><span class="brand-detail">Calgary handyman</span></span></a>
 <nav aria-label="Main"><a href="#services">Services</a><a href="#materials">Planning</a><a href="#inspiration">Ideas</a></nav>
 </header>
 <main id="top">
@@ -35,15 +78,16 @@ footer svg { flex-shrink: 0; }
 <img src="hero.jpg" alt="" fetchpriority="high">
 <div class="wrap hero-copy">
 <p class="tag">CALGARY, ALBERTA <span> / </span> CALGARY HANDYMAN SERVICES</p>
-<h1 id="headline">Give your to-do list a fresh start.</h1>
+<h1 id="headline">Let’s tackle that to-do list.</h1>
 <p>Practical help with small home projects and installation enquiries.</p>
 <a class="button" href="#estimate">Request an estimate <span aria-hidden="true">↗</span></a>
 </div>
 <p class="credit">AI-generated design inspiration</p>
 </section>
+<aside class="brand-story"><div class="wrap brand-story-inner"><p class="tag">HELP AROUND YOUR CALGARY HOME</p><p>Small installations and the jobs around the house start with a clear description. Bring Daniel your list, photos of the area and the details of any products you already have.</p></div></aside>
 <section class="wrap section" id="services">
 <p class="tag">01 / SERVICES</p>
-<h2>Make the next improvement count.</h2>
+<h2>Start with the job in front of you.</h2>
 <div class="grid services">
 <article><p class="tag">01</p><h3>Small home projects</h3><p>Describe the job and the result you want, with photos of the area.</p></article>
 <article><p class="tag">02</p><h3>Outdoor lighting projects</h3><p>Discuss the location and scope of the lighting installation you have in mind.</p></article>
