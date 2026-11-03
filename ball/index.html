@@ -4,55 +4,75 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>Jamo Handyman & Renovations | Calgary</title>
+<meta name="description" content="Flooring updates, baseboards, basement storage and handyman projects in Calgary. Independent Framework website concept.">
+<meta name="demo-revision" content="service-specific-v2">
+<title>Jamo Handyman &amp; Renovations | flooring, trim &amp; interior renovations | Calgary</title>
 <link rel="stylesheet" href="style.css">
+<style>
+.brand { max-width: 100%; overflow-wrap: anywhere; font-size: 1rem; }
+.hero h1 { max-width: 15ch; font-size: clamp(2.65rem, 6.4vw, 5.8rem); }
+.hero-copy > p:not(.tag) { max-width: 42ch; }
+.hero .tag { max-width: 62ch; }
+.project-ideas { display: grid; grid-template-columns: 1.2fr 1fr; gap: 32px; align-items: center; margin-top: 32px; }
+.project-ideas img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: 70% center; }
+.project-ideas p { max-width: 45ch; }
+.choices article { border-top: 2px solid #9b8b60; padding-top: 12px; }
+footer svg { flex-shrink: 0; }
+@media (max-width: 620px) {
+  .project-ideas { grid-template-columns: 1fr; }
+  .hero-copy { padding-block: 48px 76px; }
+  footer h2 { font-size: clamp(2rem, 9vw, 3rem); overflow-wrap: anywhere; }
+}
+</style>
 </head>
 <body>
 <header class="bar">
-<a class="brand" href="#top"><span aria-hidden="true">▰</span> Jamo Handyman &amp; Renovations</a>
-<nav aria-label="Main"><a href="#services">Services</a><a href="#materials">Materials</a><a href="#inspiration">Inspiration</a></nav>
+<a class="brand" href="#top">Jamo Handyman &amp; Renovations</a>
+<nav aria-label="Main"><a href="#services">Services</a><a href="#materials">Planning</a><a href="#inspiration">Ideas</a></nav>
 </header>
 <main id="top">
 <section class="hero" aria-labelledby="headline">
-
+<img src="hero.jpg" alt="" fetchpriority="high">
 <div class="wrap hero-copy">
-<p class="tag">CALGARY, ALBERTA <span> / </span> FLOORING, TRIM AND RENOVATIONS</p>
-<h1 id="headline">Make the details work together.</h1>
-<p>Flooring, trim and renovations in Calgary and the surrounding area.</p>
+<p class="tag">CALGARY, ALBERTA <span> / </span> FLOORING, TRIM &amp; INTERIOR RENOVATIONS</p>
+<h1 id="headline">Make your space work harder.</h1>
+<p>Flooring updates, baseboards, basement storage and handyman projects in Calgary.</p>
 <a class="button" href="#estimate">Request an estimate <span aria-hidden="true">↗</span></a>
 </div>
-
+<p class="credit">AI-generated design inspiration</p>
 </section>
 <section class="wrap section" id="services">
 <p class="tag">01 / SERVICES</p>
-<h2>What we can help with.</h2>
+<h2>Make the next improvement count.</h2>
 <div class="grid services">
- <article><p class="tag">01</p><h3>Flooring &amp; trim</h3><p>Plan new flooring, baseboards and transitions together for a consistent finish.</p></article>
- <article><p class="tag">02</p><h3>Renovation projects</h3><p>Make better use of interior space with practical updates such as basement storage.</p></article>
- </div>
+<article><p class="tag">01</p><h3>Flooring</h3><p>Plan a vinyl floor replacement around room sizes and adjoining surfaces.</p></article>
+<article><p class="tag">02</p><h3>Trim &amp; baseboards</h3><p>Bring the edges of a room together with coordinated finishing details.</p></article>
+<article><p class="tag">03</p><h3>Interior improvements</h3><p>Explore practical changes such as a storage room in the basement.</p></article>
+</div>
 </section>
 <section class="materials" id="materials"><div class="wrap section">
-<p class="tag">02 / PROJECT OPTIONS</p>
-<h2>Plan the details.</h2>
-<p>A few details to consider before asking for an estimate.</p>
+<p class="tag">02 / PROJECT PLANNING</p>
+<h2>Start with the details.</h2>
+<p>A few things to consider before requesting an estimate.</p>
 <div class="grid choices">
-<article><span class="sample cedar"></span><h3>Vinyl flooring</h3></article>
-<article><span class="sample treated"></span><h3>Baseboards</h3></article>
-<article><span class="sample composite"></span><h3>Storage finishes</h3></article>
+<article><h3>Flooring selection</h3><p>Compare colour, wear requirements and product specifications.</p></article>
+<article><h3>Trim details</h3><p>Photograph the existing profile and note where new trim needs to match.</p></article>
+<article><h3>Storage needs</h3><p>List what needs a home before deciding on a layout.</p></article>
 </div>
 </div></section>
 <section class="wrap section" id="inspiration">
 <p class="tag">03 / DESIGN INSPIRATION</p>
-<h2>Details to build around.</h2>
-<p>Start with what you’d like to change, then gather a few references to show the result you have in mind.</p>
- <div class="grid services">
- <article><h3>Show the space</h3><p>Take a wide photo, then capture the details you want to update.</p></article>
- <article><h3>Share an example</h3><p>Save a photo or product link that shows the finish or setup you’re after.</p></article>
- </div></section>
+<h2>Bring the rooms together.</h2>
+<p>AI-generated concept imagery for discussing ideas.</p>
+<div class="project-ideas">
+<figure><img src="hero.jpg" alt="Interior inspiration showing warm flooring and white hallway trim" loading="lazy"><figcaption>Concept inspiration</figcaption></figure>
+<div><h3>A consistent finish from one room to the next.</h3><p>Start with the floor, baseboards and transitions that make separate rooms feel connected.</p></div>
+</div>
+</section>
 <section class="estimate" id="estimate"><div class="wrap section">
-<p class="tag">04 / PROJECT PLANNING</p>
+<p class="tag">04 / YOUR PROJECT</p>
 <h2>Request an estimate</h2>
-<p>Start with your neighbourhood, a few photos or measurements, and a short description of the work.</p>
+<p>Share your room sizes, flooring or trim references and a short list of the changes you need.</p>
 <button class="button" disabled>Enquiries disabled in this preview</button>
 </div></section>
 </main>
@@ -73,4 +93,3 @@
 </footer>
 </body>
 </html>
-
