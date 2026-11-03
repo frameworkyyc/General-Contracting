@@ -60,6 +60,26 @@ footer h2{font:750 clamp(2.2rem,5vw,4.25rem)/1.04 system-ui,sans-serif;letter-sp
 footer .button{background:white}
 .fine{border-top:1px solid #666;margin-top:2rem;padding-top:1rem;color:#ddd;max-width:none;font-size:.85rem}
 @media(max-width:680px){.grid,.split{grid-template-columns:1fr}.bar{align-items:flex-start;flex-direction:column}.hero{min-height:500px}.hero::after{background:linear-gradient(90deg,rgba(20,18,13,.92),rgba(20,18,13,.55))}}
+
+.hero{min-height:clamp(570px,78svh,830px)}
+.hero h1{max-width:9ch}
+.hero-copy{padding-block:5.5rem}
+nav a{text-decoration:none}
+nav a:hover{text-decoration:underline}
+.bar nav a:last-child{border-bottom:2px solid #a37d09}
+.services-strip{background:var(--gold);padding:.85rem 0;font-size:.75rem;font-weight:800;letter-spacing:.11em;text-transform:uppercase}
+.services-strip .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem 1.5rem}
+#services .card{border-top:3px solid var(--ink);padding:1.65rem}
+#details .sample{height:150px}
+.stone{background:repeating-linear-gradient(0deg,transparent 0 73px,#f2eadc 73px 75px),repeating-linear-gradient(90deg,#c9bdaa 0 122px,#f2eadc 122px 124px)}
+.planning{border-block:1px solid var(--line)}
+details{border-bottom:1px solid var(--line);padding:1rem 0}
+summary{font-weight:750;cursor:pointer}
+details p{margin-top:.65rem}
+.preview{border:1px solid var(--line);background:#fffdf7;padding:1rem;white-space:pre-wrap;overflow-wrap:anywhere}
+.copy-status{font-size:.85rem;min-height:1.35em}
+#brief-button{margin:0;justify-self:start}
+@media(max-width:680px){.hero{min-height:520px}.hero-copy{padding-block:4rem}.hero img{object-position:65% center}.services-strip .wrap{justify-content:flex-start}}
 </style>
 </head>
 <body>
@@ -71,11 +91,12 @@ footer .button{background:white}
 <section class="hero" aria-labelledby="headline">
 <img src="https://raw.githubusercontent.com/frameworkyyc/General-Contracting/46fd9e3e7ad7ebbcfcdc0a0c75e132f4f482cc09/ball/hero.jpg" alt="" fetchpriority="high">
 <div class="wrap hero-copy"><p class="tag">Calgary, Alberta · Tile &amp; renovations</p>
-<h1 id="headline">Good tile work shows.</h1>
-<p>From a kitchen backsplash to a full bathroom renovation, bring the room together with tile that suits how you use it.</p>
-<a class="button" href="#estimate">Request a quote <span aria-hidden="true">↗</span></a>
+<h1 id="headline">Tile that makes the room.</h1>
+<p>Showers, backsplashes and tile floors for Calgary homes. From the first layout decision to the last grout line.</p>
+<a class="button" href="#estimate">Plan your tile project <span aria-hidden="true">↗</span></a>
 </div><p class="credit">AI-generated design inspiration</p>
 </section>
+<div class="services-strip"><div class="wrap"><span>01 · Showers &amp; baths</span><span>02 · Kitchen backsplashes</span><span>03 · Floors &amp; repairs</span></div></div>
 <section class="wrap section" id="services">
 <p class="tag">01 / Services</p><h2>From a single wall to a whole room.</h2>
 <div class="grid">
@@ -96,17 +117,30 @@ footer .button{background:white}
 <p class="intro">Warm wood, a simple tile field and dark hardware give this bathroom a clear palette. For your own project, start with photos of the existing room and decide what you’d like to keep.</p></div>
 <figure><img src="https://raw.githubusercontent.com/frameworkyyc/General-Contracting/46fd9e3e7ad7ebbcfcdc0a0c75e132f4f482cc09/ball/hero.jpg" alt="Bathroom concept with an oak vanity, light tile and dark fixtures" loading="lazy"><figcaption>AI-generated design inspiration. Shown as a design idea.</figcaption></figure>
 </section>
+<section class="planning"><div class="wrap section split">
+<div><p class="tag">Before you pick a tile</p><h2>Get the details right early.</h2><p class="intro">A few decisions about the existing room can make it easier to compare options and explain the job.</p></div>
+<div>
+<details open><summary>Can I replace just a few damaged tiles?</summary><p>Include a close-up and a wider photo, and mention whether you have spare tiles. The condition underneath and whether the tile can be matched help determine what’s practical.</p></details>
+<details><summary>What should I decide before retiling a shower?</summary><p>Note whether the shower base and fixtures are staying. Think about the niche, wall layout and where the tile ends at the doorway or ceiling.</p></details>
+<details><summary>What matters for a Calgary entryway?</summary><p>Think about wet boots, grit and snowmelt. Ask about slip resistance, easy cleaning and how the tile will meet the adjoining floor.</p></details>
+</div></div></section>
 <section class="estimate" id="estimate"><div class="wrap section split">
 <div><p class="tag">04 / Your project</p><h2>Request a quote.</h2>
 <p class="intro">A Calgary neighbourhood, rough dimensions and a couple of photos are a useful starting point. Let LGI know whether you’re replacing tile or renovating the room.</p>
 <p class="contact"><a href="tel:+14039693102">403-969-3102</a><br><a href="mailto:tile.setting@gmail.com">tile.setting@gmail.com</a></p></div>
-<form aria-label="Example quote form" aria-describedby="form-note">
-<label>Your name<input autocomplete="name"></label>
-<label>Email<input type="email" autocomplete="email"></label>
-<label>Project type<select><option value="">Choose a project type</option><option>Bathroom or shower</option><option>Kitchen or backsplash</option><option>Floor tile</option><option>Tile repair or replacement</option></select></label>
-<label>Tell us about your project<textarea rows="3" placeholder="Neighbourhood, room size and what you’d like to change"></textarea></label>
-<button type="button" class="button" disabled>Request a quote</button>
-<small id="form-note">Demo form. Submission is disabled.</small>
+<form id="project-form" method="dialog" aria-label="Tile project planner" aria-describedby="form-note">
+<h3>Build your project brief</h3>
+<label>Calgary neighbourhood<input id="area" placeholder="e.g. Bowness"></label>
+<label>Project type<select id="project-type" required><option value="">Choose a project type</option><option>Bathroom or shower</option><option>Kitchen or backsplash</option><option>Floor tile</option><option>Tile repair or replacement</option></select></label>
+<label>Approximate size<input id="size" placeholder="e.g. 35 sq. ft. or 5 × 8 ft."></label>
+<label>What are you changing?<textarea id="notes" rows="3" placeholder="e.g. Replace the backsplash and keep the counters"></textarea></label>
+<button type="submit" class="button" id="brief-button">Create project brief</button>
+<div id="brief-result" hidden>
+<p class="preview" id="brief" tabindex="-1"></p>
+<button type="button" class="button" id="copy-brief">Copy brief</button>
+<p class="copy-status" id="copy-status" role="status"></p>
+</div>
+<small id="form-note">Preview only. Your brief stays on this page until you copy it.</small>
 </form></div></section>
 </main>
 <footer><div class="wrap section">
@@ -116,5 +150,37 @@ footer .button{background:white}
 <a class="button" href="https://frameworkco.ca/contact.html">Talk to Framework <span aria-hidden="true">↗</span></a>
 <p class="fine">Independent Framework website concept for LGI Tiling Specialist · Calgary, AB</p>
 </div></footer>
+<script>
+const form = document.querySelector('#project-form');
+const brief = document.querySelector('#brief');
+const result = document.querySelector('#brief-result');
+const status = document.querySelector('#copy-status');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const type = form.querySelector('#project-type').value;
+  const area = form.querySelector('#area').value.trim();
+  const size = form.querySelector('#size').value.trim();
+  const notes = form.querySelector('#notes').value.trim();
+  brief.textContent = [
+    'Tile project: ' + type,
+    area && 'Neighbourhood: ' + area,
+    size && 'Approximate size: ' + size,
+    notes && 'Scope: ' + notes
+  ].filter(Boolean).join('\n');
+  status.textContent = '';
+  result.hidden = false;
+  brief.focus();
+});
+
+document.querySelector('#copy-brief').addEventListener('click', async () => {
+  try {
+    await navigator.clipboard.writeText(brief.textContent);
+    status.textContent = 'Project brief copied.';
+  } catch {
+    status.textContent = 'Select the brief above and copy it manually.';
+  }
+});
+</script>
 </body>
 </html>
