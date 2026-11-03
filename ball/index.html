@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <meta name="description" content="Custom decks in wood, composite and tile for Calgary and the surrounding area. Independent Framework website concept.">
-<meta name="demo-revision" content="service-specific-v2">
+<meta name="demo-revision" content="business-branding-v3">
 <title>Blueform Construction Services Inc. | custom decks | Calgary</title>
 <link rel="stylesheet" href="style.css">
 <style>
@@ -24,10 +24,53 @@ footer svg { flex-shrink: 0; }
   footer h2 { font-size: clamp(2rem, 9vw, 3rem); overflow-wrap: anywhere; }
 }
 </style>
+<style id="business-theme">
+/* Palette and typography direction inspired by the verified logo at https://www.homestars.com/gardening-outdoors/deck-contractor-pros/calgary-alberta */
+:root { --ink:#192e4c; --paper:#ffffff; --pine:#172f50; --clay:#1c3d68; }
+body { background:#ffffff; color:#192e4c; }
+.bar { background:#fff; border-bottom:1px solid #edf2f7; padding-block:14px; }
+.brand { display:flex; align-items:center; gap:12px; text-decoration:none; letter-spacing:0; min-width:0; }
+.brand-copy { display:flex; flex-direction:column; gap:5px; min-width:0; }
+.brand-title { font-family:Arial, Helvetica, sans-serif; font-size:clamp(1.15rem,2vw,1.55rem); font-weight:800; line-height:1.12; }
+.brand-detail { font-size:.65rem; font-weight:600; letter-spacing:.06em; line-height:1.5; }
+.brand-logo { display:block; width:166px; height:94px; object-fit:contain; }
+.brand-logo-kings { width:76px; height:88px; }
+.brand-logo-blueform { width:180px; height:104px; }
+.brand-logo-serenity { width:148px; height:98px; }
+.brand-logo-smart { width:166px; height:106px; }
+main h1, main h2 { font-family:Arial, Helvetica, sans-serif; font-weight:800; }
+main h2 { letter-spacing:-.035em; }
+.hero { background:#172f50; }
+.hero::after { background:linear-gradient(90deg,#172f50f5,#172f50cf 40%,#172f5040); }
+.hero h1 { max-width:16ch; }
+.tag { color:#1c3d68; }
+.hero .tag, .estimate .tag { color:#c7ddf5; }
+main .button { background:#1c3d68; color:#ffffff; border-radius:0px; }
+main a.button:hover { background:#1c3d68; filter:brightness(.93); }
+main .button:disabled { background:#edf2f7; color:#192e4c; filter:none; }
+a:focus-visible { outline:3px solid #1c3d68; outline-offset:5px; }
+.hero a:focus-visible, footer a:focus-visible { outline-color:#fff; }
+.materials { background:#edf2f7; }
+.services article, .choices article { border-color:#1c3d68; }
+.brand-story { background:#ffffff; border-bottom:1px solid #edf2f7; }
+.brand-story-inner { display:grid; grid-template-columns:1fr 2fr; gap:24px; align-items:center; padding-block:28px; }
+.brand-story-inner p { margin:0; }
+.brand-story-inner > p:last-child { font-size:.94rem; max-width:70ch; }
+.estimate { background:#172f50; color:#ffffff; }
+.credit { background:#172f50; color:#fff; }
+
+@media (max-width:620px) {
+ .brand-story-inner { grid-template-columns:1fr; gap:12px; padding-block:24px; }
+ .brand { max-width:100%; }
+ .brand-copy { flex:1; }
+ .brand-logo-kings { width:60px; height:70px; flex-shrink:0; }
+ .hero::after { background:linear-gradient(90deg,#172f50f2,#172f50a6); }
+}
+</style>
 </head>
 <body>
 <header class="bar">
-<a class="brand" href="#top">Blueform Construction Services Inc.</a>
+<a class="brand" href="#top"><img class="brand-logo brand-logo-blueform" src="logo.png" alt="Blueform Construction Services Inc."></a>
 <nav aria-label="Main"><a href="#services">Services</a><a href="#materials">Planning</a><a href="#inspiration">Ideas</a></nav>
 </header>
 <main id="top">
@@ -35,15 +78,16 @@ footer svg { flex-shrink: 0; }
 <img src="deck.jpg" alt="" fetchpriority="high">
 <div class="wrap hero-copy">
 <p class="tag">CALGARY, ALBERTA <span> / </span> CUSTOM DECKS</p>
-<h1 id="headline">A deck made for your everyday.</h1>
+<h1 id="headline">The shape of a better backyard.</h1>
 <p>Custom decks in wood, composite and tile for Calgary and the surrounding area.</p>
 <a class="button" href="#estimate">Request an estimate <span aria-hidden="true">↗</span></a>
 </div>
 <p class="credit">AI-generated design inspiration</p>
 </section>
+<aside class="brand-story"><div class="wrap brand-story-inner"><p class="tag">WOOD / COMPOSITE / TILE</p><p>Blueform’s focus is custom decks. The material, layout and connection to the yard all belong in the same plan, whether you prefer wood, composite or tile.</p></div></aside>
 <section class="wrap section" id="services">
 <p class="tag">01 / SERVICES</p>
-<h2>Build your time outside around you.</h2>
+<h2>Choose the surface. Shape the space.</h2>
 <div class="grid services">
 <article><p class="tag">01</p><h3>Custom deck construction</h3><p>Plan the footprint around doors, yard access and where you want to sit.</p></article>
 <article><p class="tag">02</p><h3>Wood, composite &amp; tile</h3><p>Compare surface options as part of the overall deck design.</p></article>
