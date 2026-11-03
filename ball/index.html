@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <meta name="description" content="Cabinet veneer, trim and interior woodwork in Calgary. Independent Framework website concept.">
-<meta name="demo-revision" content="business-branding-v3">
+<meta name="demo-revision" content="quote-form-v4">
 <title>Phillips Woodcraft | cabinet updates &amp; finish carpentry | Calgary</title>
 <link rel="stylesheet" href="style.css">
 <style>
@@ -67,6 +67,21 @@ a:focus-visible { outline:3px solid #754323; outline-offset:5px; }
  .hero::after { background:linear-gradient(90deg,#3d2f25f2,#3d2f25a6); }
 }
 </style>
+<style id="quote-form-style">
+.quote-form { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; max-width:860px; margin-top:32px; padding:clamp(20px,4vw,36px); border:1px solid #ffffff66; border-radius:6px; }
+.quote-field { display:grid; gap:8px; min-width:0; }
+.quote-field label { font-size:.9rem; font-weight:650; }
+.quote-field input, .quote-field select, .quote-field textarea { width:100%; min-width:0; border:1px solid #c7c7c7; border-radius:3px; padding:13px 14px; font:inherit; font-size:1rem; line-height:1.5; background:#fff; color:#242424; }
+.quote-field textarea { min-height:144px; resize:vertical; }
+.quote-field input::placeholder, .quote-field textarea::placeholder { color:#656565; opacity:1; }
+.quote-field input:focus-visible, .quote-field select:focus-visible, .quote-field textarea:focus-visible, #quote-button:focus-visible { outline:3px solid #fff; outline-offset:4px; }
+.quote-wide { grid-column:1 / -1; }
+.quote-actions { display:flex; align-items:center; flex-wrap:wrap; gap:16px; }
+.quote-actions .button { margin:0; cursor:pointer; }
+.quote-actions p { margin:0; font-size:.85rem; }
+#quote-status { min-height:1.6em; margin:0; font-size:.95rem; }
+@media (max-width:620px) { .quote-form { grid-template-columns:1fr; } }
+</style>
 </head>
 <body>
 <header class="bar">
@@ -80,7 +95,7 @@ a:focus-visible { outline:3px solid #754323; outline-offset:5px; }
 <p class="tag">CALGARY, ALBERTA <span> / </span> CABINET UPDATES &amp; FINISH CARPENTRY</p>
 <h1 id="headline">Good woodwork is in the details.</h1>
 <p>Cabinet veneer, trim and interior woodwork in Calgary.</p>
-<a class="button" href="#estimate">Request an estimate <span aria-hidden="true">↗</span></a>
+<a class="button" href="#estimate">Request a quote <span aria-hidden="true">↗</span></a>
 </div>
 <p class="credit">AI-generated design inspiration</p>
 </section>
@@ -114,9 +129,18 @@ a:focus-visible { outline:3px solid #754323; outline-offset:5px; }
 </section>
 <section class="estimate" id="estimate"><div class="wrap section">
 <p class="tag">04 / YOUR PROJECT</p>
-<h2>Request an estimate</h2>
+<h2>Request a quote</h2>
 <p>Share cabinet or trim photos, approximate dimensions and the finish you want to achieve.</p>
-<button class="button" disabled>Enquiries disabled in this preview</button>
+<form id="quote-form" class="quote-form" method="dialog" autocomplete="off" aria-label="Demonstration quote request" aria-describedby="quote-demo-note">
+<div class="quote-field"><label for="quote-name">Your name</label><input id="quote-name" type="text" placeholder="Name"></div>
+<div class="quote-field"><label for="quote-email">Email address</label><input id="quote-email" type="email" placeholder="you@example.com"></div>
+<div class="quote-field"><label for="quote-phone">Phone number <span>(optional)</span></label><input id="quote-phone" type="tel" placeholder="403-555-0123"></div>
+<div class="quote-field"><label for="quote-area">Neighbourhood or area</label><input id="quote-area" type="text" placeholder="Where is the project?"></div>
+<div class="quote-field quote-wide"><label for="quote-type">What can we help with?</label><select id="quote-type"><option value="">Choose your project type</option><option>Cabinet update</option><option>Veneer work</option><option>Trim or finish carpentry</option><option>Decorative woodwork</option></select></div>
+<div class="quote-field quote-wide"><label for="quote-details">Tell us about your project</label><textarea id="quote-details" placeholder="Describe the work, approximate size and when you would like to get started."></textarea></div>
+<div class="quote-actions quote-wide"><button id="quote-button" class="button" type="button">Request a quote <span aria-hidden="true">↗</span></button><p id="quote-demo-note">Demo form · Submission is disabled.</p></div>
+<p id="quote-status" class="quote-wide" role="status" aria-live="polite" aria-atomic="true"></p>
+</form>
 </div></section>
 </main>
 <footer style="background:#0a0a0a;color:#fff">
@@ -134,5 +158,18 @@ a:focus-visible { outline:3px solid #754323; outline-offset:5px; }
   <p style="border-top:1px solid #555;padding-top:20px;margin:32px 0 0;color:#dedede">Independent website concept for Phillips Woodcraft · Calgary, AB<br>Enquiry submission is disabled.</p>
 </div>
 </footer>
+<script>
+(() => {
+  const form = document.getElementById('quote-form');
+  const button = document.getElementById('quote-button');
+  const status = document.getElementById('quote-status');
+  function showDemoMessage(event) {
+    event.preventDefault();
+    status.textContent = 'This is a demonstration. Your request has not been sent.';
+  }
+  form.addEventListener('submit', showDemoMessage);
+  button.addEventListener('click', showDemoMessage);
+})();
+</script>
 </body>
 </html>
