@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <meta name="description" content="Closet installation, mudrooms, pantries and personalized storage in Calgary. Independent Framework website concept.">
-<meta name="demo-revision" content="service-specific-v2">
+<meta name="demo-revision" content="business-branding-v3">
 <title>Volodymyr Konovalov | custom closets &amp; storage | Calgary</title>
 <link rel="stylesheet" href="style.css">
 <style>
@@ -24,10 +24,53 @@ footer svg { flex-shrink: 0; }
   footer h2 { font-size: clamp(2rem, 9vw, 3rem); overflow-wrap: anywhere; }
 }
 </style>
+<style id="business-theme">
+/* Proposed identity direction based on the business's documented specialty. */
+:root { --ink:#303932; --paper:#faf9f4; --pine:#303e34; --clay:#49654b; }
+body { background:#faf9f4; color:#303932; }
+.bar { background:#fff; border-bottom:1px solid #e9ede5; padding-block:14px; }
+.brand { display:flex; align-items:center; gap:12px; text-decoration:none; letter-spacing:0; min-width:0; }
+.brand-copy { display:flex; flex-direction:column; gap:5px; min-width:0; }
+.brand-title { font-family:'Trebuchet MS', Arial, sans-serif; font-size:clamp(1.15rem,2vw,1.55rem); font-weight:500; line-height:1.12; }
+.brand-detail { font-size:.65rem; font-weight:600; letter-spacing:.06em; line-height:1.5; }
+.brand-logo { display:block; width:166px; height:94px; object-fit:contain; }
+.brand-logo-kings { width:76px; height:88px; }
+.brand-logo-blueform { width:180px; height:104px; }
+.brand-logo-serenity { width:148px; height:98px; }
+.brand-logo-smart { width:166px; height:106px; }
+main h1, main h2 { font-family:'Trebuchet MS', Arial, sans-serif; font-weight:500; }
+main h2 { letter-spacing:-.035em; }
+.hero { background:#303e34; }
+.hero::after { background:linear-gradient(90deg,#303e34f5,#303e34cf 40%,#303e3440); }
+.hero h1 { max-width:16ch; }
+.tag { color:#3c593e; }
+.hero .tag, .estimate .tag { color:#d7e5cb; }
+main .button { background:#49654b; color:#ffffff; border-radius:2px; }
+main a.button:hover { background:#49654b; filter:brightness(.93); }
+main .button:disabled { background:#e9ede5; color:#303932; filter:none; }
+a:focus-visible { outline:3px solid #3c593e; outline-offset:5px; }
+.hero a:focus-visible, footer a:focus-visible { outline-color:#fff; }
+.materials { background:#e9ede5; }
+.services article, .choices article { border-color:#49654b; }
+.brand-story { background:#faf9f4; border-bottom:1px solid #e9ede5; }
+.brand-story-inner { display:grid; grid-template-columns:1fr 2fr; gap:24px; align-items:center; padding-block:28px; }
+.brand-story-inner p { margin:0; }
+.brand-story-inner > p:last-child { font-size:.94rem; max-width:70ch; }
+.estimate { background:#303e34; color:#faf9f4; }
+.credit { background:#303e34; color:#fff; }
+
+@media (max-width:620px) {
+ .brand-story-inner { grid-template-columns:1fr; gap:12px; padding-block:24px; }
+ .brand { max-width:100%; }
+ .brand-copy { flex:1; }
+ .brand-logo-kings { width:60px; height:70px; flex-shrink:0; }
+ .hero::after { background:linear-gradient(90deg,#303e34f2,#303e34a6); }
+}
+</style>
 </head>
 <body>
 <header class="bar">
-<a class="brand" href="#top">Volodymyr Konovalov</a>
+<a class="brand" href="#top"><span class="brand-copy"><span class="brand-title">Volodymyr Konovalov</span><span class="brand-detail">Closets &amp; custom storage</span></span></a>
 <nav aria-label="Main"><a href="#services">Services</a><a href="#materials">Planning</a><a href="#inspiration">Ideas</a></nav>
 </header>
 <main id="top">
@@ -35,15 +78,16 @@ footer svg { flex-shrink: 0; }
 <img src="hero.jpg" alt="" fetchpriority="high">
 <div class="wrap hero-copy">
 <p class="tag">CALGARY, ALBERTA <span> / </span> CUSTOM CLOSETS &amp; STORAGE</p>
-<h1 id="headline">A place for everything you bring home.</h1>
+<h1 id="headline">Everything, in its own place.</h1>
 <p>Closet installation, mudrooms, pantries and personalized storage in Calgary.</p>
 <a class="button" href="#estimate">Request an estimate <span aria-hidden="true">↗</span></a>
 </div>
 <p class="credit">AI-generated design inspiration</p>
 </section>
+<aside class="brand-story"><div class="wrap brand-story-inner"><p class="tag">CLOSETS / MUDROOMS / PANTRIES</p><p>Volodymyr focuses on custom closet systems, mudrooms and pantries, taking the work from measurements and planning through installation and finishing. Start with what you need to store and the space you have.</p></div></aside>
 <section class="wrap section" id="services">
 <p class="tag">01 / SERVICES</p>
-<h2>Make the next improvement count.</h2>
+<h2>Storage designed around real life.</h2>
 <div class="grid services">
 <article><p class="tag">01</p><h3>Custom closets</h3><p>Organize hanging space, shelves and drawers around your wardrobe.</p></article>
 <article><p class="tag">02</p><h3>Mudrooms &amp; pantries</h3><p>Make everyday storage easier to reach and easier to use.</p></article>
