@@ -4,55 +4,74 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>Daniel Mezbein | Calgary</title>
+<meta name="description" content="Practical help with small home projects and installation enquiries. Independent Framework website concept.">
+<meta name="demo-revision" content="service-specific-v2">
+<title>Daniel Mezbein | calgary handyman services | Calgary</title>
 <link rel="stylesheet" href="style.css">
+<style>
+.brand { max-width: 100%; overflow-wrap: anywhere; font-size: 1rem; }
+.hero h1 { max-width: 15ch; font-size: clamp(2.65rem, 6.4vw, 5.8rem); }
+.hero-copy > p:not(.tag) { max-width: 42ch; }
+.hero .tag { max-width: 62ch; }
+.project-ideas { display: grid; grid-template-columns: 1.2fr 1fr; gap: 32px; align-items: center; margin-top: 32px; }
+.project-ideas img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: 70% center; }
+.project-ideas p { max-width: 45ch; }
+.choices article { border-top: 2px solid #9b8b60; padding-top: 12px; }
+footer svg { flex-shrink: 0; }
+@media (max-width: 620px) {
+  .project-ideas { grid-template-columns: 1fr; }
+  .hero-copy { padding-block: 48px 76px; }
+  footer h2 { font-size: clamp(2rem, 9vw, 3rem); overflow-wrap: anywhere; }
+}
+</style>
 </head>
 <body>
 <header class="bar">
-<a class="brand" href="#top"><span aria-hidden="true">▰</span> Daniel Mezbein</a>
-<nav aria-label="Main"><a href="#services">Services</a><a href="#materials">Materials</a><a href="#inspiration">Inspiration</a></nav>
+<a class="brand" href="#top">Daniel Mezbein</a>
+<nav aria-label="Main"><a href="#services">Services</a><a href="#materials">Planning</a><a href="#inspiration">Ideas</a></nav>
 </header>
 <main id="top">
 <section class="hero" aria-labelledby="headline">
-
+<img src="hero.jpg" alt="" fetchpriority="high">
 <div class="wrap hero-copy">
-<p class="tag">CALGARY, ALBERTA <span> / </span> LOCAL HANDYMAN SERVICES</p>
-<h1 id="headline">Take care of the jobs around the house.</h1>
-<p>Local handyman services in Calgary and the surrounding area.</p>
+<p class="tag">CALGARY, ALBERTA <span> / </span> CALGARY HANDYMAN SERVICES</p>
+<h1 id="headline">Give your to-do list a fresh start.</h1>
+<p>Practical help with small home projects and installation enquiries.</p>
 <a class="button" href="#estimate">Request an estimate <span aria-hidden="true">↗</span></a>
 </div>
-
+<p class="credit">AI-generated design inspiration</p>
 </section>
 <section class="wrap section" id="services">
 <p class="tag">01 / SERVICES</p>
-<h2>What we can help with.</h2>
+<h2>Make the next improvement count.</h2>
 <div class="grid services">
- <article><p class="tag">01</p><h3>Small installations</h3><p>Get help planning practical installs around the home, including outdoor lighting projects.</p></article>
- <article><p class="tag">02</p><h3>Home repairs</h3><p>Bring a list of small fixes and describe what needs attention in each room.</p></article>
- </div>
+<article><p class="tag">01</p><h3>Small home projects</h3><p>Describe the job and the result you want, with photos of the area.</p></article>
+<article><p class="tag">02</p><h3>Outdoor lighting projects</h3><p>Discuss the location and scope of the lighting installation you have in mind.</p></article>
+</div>
 </section>
 <section class="materials" id="materials"><div class="wrap section">
-<p class="tag">02 / PROJECT OPTIONS</p>
-<h2>Plan the details.</h2>
-<p>A few details to consider before asking for an estimate.</p>
+<p class="tag">02 / PROJECT PLANNING</p>
+<h2>Start with the details.</h2>
+<p>A few things to consider before requesting an estimate.</p>
 <div class="grid choices">
-<article><span class="sample cedar"></span><h3>Fixtures</h3></article>
-<article><span class="sample treated"></span><h3>Hardware</h3></article>
-<article><span class="sample composite"></span><h3>Repair materials</h3></article>
+<article><h3>The job list</h3><p>Group the items you would like help with so the scope is clear.</p></article>
+<article><h3>The parts</h3><p>Share product links and photographs of any parts you already have.</p></article>
+<article><h3>The location</h3><p>Note access, mounting surfaces and anything unusual about the space.</p></article>
 </div>
 </div></section>
 <section class="wrap section" id="inspiration">
 <p class="tag">03 / DESIGN INSPIRATION</p>
-<h2>Details to build around.</h2>
-<p>Start with what you’d like to change, then gather a few references to show the result you have in mind.</p>
- <div class="grid services">
- <article><h3>Show the space</h3><p>Take a wide photo, then capture the details you want to update.</p></article>
- <article><h3>Share an example</h3><p>Save a photo or product link that shows the finish or setup you’re after.</p></article>
- </div></section>
+<h2>Make the small jobs easier to explain.</h2>
+<p>AI-generated concept imagery for discussing ideas.</p>
+<div class="project-ideas">
+<figure><img src="hero.jpg" alt="Home project inspiration with furniture assembly tools in a bedroom" loading="lazy"><figcaption>Concept inspiration</figcaption></figure>
+<div><h3>A clear plan starts with the item and the space.</h3><p>Send a wide photo and a close-up so the work can be assessed before a visit.</p></div>
+</div>
+</section>
 <section class="estimate" id="estimate"><div class="wrap section">
-<p class="tag">04 / PROJECT PLANNING</p>
+<p class="tag">04 / YOUR PROJECT</p>
 <h2>Request an estimate</h2>
-<p>Start with your neighbourhood, a few photos or measurements, and a short description of the work.</p>
+<p>Share your Calgary neighbourhood, photos and a short list of the jobs you want help with.</p>
 <button class="button" disabled>Enquiries disabled in this preview</button>
 </div></section>
 </main>
@@ -73,4 +92,3 @@
 </footer>
 </body>
 </html>
-
