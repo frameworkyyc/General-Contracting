@@ -1,0 +1,9 @@
+{
+  // This branch preview serves the Ball demo at the preview hostname root.
+  "name": "contracting",
+  "compatibility_date": "2026-11-02",
+  "previews": {},
+  "assets": {
+    "directory": "./ball"
+  }
+}
