@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <meta name="description" content="Flooring updates, baseboards, basement storage and handyman projects in Calgary. Independent Framework website concept.">
-<meta name="demo-revision" content="service-specific-v2">
+<meta name="demo-revision" content="business-branding-v3">
 <title>Jamo Handyman &amp; Renovations | flooring, trim &amp; interior renovations | Calgary</title>
 <link rel="stylesheet" href="style.css">
 <style>
@@ -24,10 +24,53 @@ footer svg { flex-shrink: 0; }
   footer h2 { font-size: clamp(2rem, 9vw, 3rem); overflow-wrap: anywhere; }
 }
 </style>
+<style id="business-theme">
+/* Proposed identity direction based on the business's documented specialty. */
+:root { --ink:#332d29; --paper:#fffcf8; --pine:#382d29; --clay:#a44f32; }
+body { background:#fffcf8; color:#332d29; }
+.bar { background:#fff; border-bottom:1px solid #f1e6da; padding-block:14px; }
+.brand { display:flex; align-items:center; gap:12px; text-decoration:none; letter-spacing:0; min-width:0; }
+.brand-copy { display:flex; flex-direction:column; gap:5px; min-width:0; }
+.brand-title { font-family:'Trebuchet MS', Arial, sans-serif; font-size:clamp(1.15rem,2vw,1.55rem); font-weight:700; line-height:1.12; }
+.brand-detail { font-size:.65rem; font-weight:600; letter-spacing:.06em; line-height:1.5; }
+.brand-logo { display:block; width:166px; height:94px; object-fit:contain; }
+.brand-logo-kings { width:76px; height:88px; }
+.brand-logo-blueform { width:180px; height:104px; }
+.brand-logo-serenity { width:148px; height:98px; }
+.brand-logo-smart { width:166px; height:106px; }
+main h1, main h2 { font-family:'Trebuchet MS', Arial, sans-serif; font-weight:700; }
+main h2 { letter-spacing:-.035em; }
+.hero { background:#382d29; }
+.hero::after { background:linear-gradient(90deg,#382d29f5,#382d29cf 40%,#382d2940); }
+.hero h1 { max-width:16ch; }
+.tag { color:#8c4028; }
+.hero .tag, .estimate .tag { color:#f0c5a6; }
+main .button { background:#a44f32; color:#ffffff; border-radius:5px; }
+main a.button:hover { background:#a44f32; filter:brightness(.93); }
+main .button:disabled { background:#f1e6da; color:#332d29; filter:none; }
+a:focus-visible { outline:3px solid #8c4028; outline-offset:5px; }
+.hero a:focus-visible, footer a:focus-visible { outline-color:#fff; }
+.materials { background:#f1e6da; }
+.services article, .choices article { border-color:#a44f32; }
+.brand-story { background:#fffcf8; border-bottom:1px solid #f1e6da; }
+.brand-story-inner { display:grid; grid-template-columns:1fr 2fr; gap:24px; align-items:center; padding-block:28px; }
+.brand-story-inner p { margin:0; }
+.brand-story-inner > p:last-child { font-size:.94rem; max-width:70ch; }
+.estimate { background:#382d29; color:#fffcf8; }
+.credit { background:#382d29; color:#fff; }
+
+@media (max-width:620px) {
+ .brand-story-inner { grid-template-columns:1fr; gap:12px; padding-block:24px; }
+ .brand { max-width:100%; }
+ .brand-copy { flex:1; }
+ .brand-logo-kings { width:60px; height:70px; flex-shrink:0; }
+ .hero::after { background:linear-gradient(90deg,#382d29f2,#382d29a6); }
+}
+</style>
 </head>
 <body>
 <header class="bar">
-<a class="brand" href="#top">Jamo Handyman &amp; Renovations</a>
+<a class="brand" href="#top"><span class="brand-copy"><span class="brand-title">Jamo</span><span class="brand-detail">Handyman &amp; Renovations</span></span></a>
 <nav aria-label="Main"><a href="#services">Services</a><a href="#materials">Planning</a><a href="#inspiration">Ideas</a></nav>
 </header>
 <main id="top">
@@ -35,15 +78,16 @@ footer svg { flex-shrink: 0; }
 <img src="hero.jpg" alt="" fetchpriority="high">
 <div class="wrap hero-copy">
 <p class="tag">CALGARY, ALBERTA <span> / </span> FLOORING, TRIM &amp; INTERIOR RENOVATIONS</p>
-<h1 id="headline">Make your space work harder.</h1>
+<h1 id="headline">Make room for everyday life.</h1>
 <p>Flooring updates, baseboards, basement storage and handyman projects in Calgary.</p>
 <a class="button" href="#estimate">Request an estimate <span aria-hidden="true">↗</span></a>
 </div>
 <p class="credit">AI-generated design inspiration</p>
 </section>
+<aside class="brand-story"><div class="wrap brand-story-inner"><p class="tag">FLOORS / TRIM / USEFUL SPACE</p><p>Jamo’s work includes flooring, baseboards and interior improvements such as basement storage. Think through the surfaces, finishing details and extra room you need together.</p></div></aside>
 <section class="wrap section" id="services">
 <p class="tag">01 / SERVICES</p>
-<h2>Make the next improvement count.</h2>
+<h2>Practical updates, room by room.</h2>
 <div class="grid services">
 <article><p class="tag">01</p><h3>Flooring</h3><p>Plan a vinyl floor replacement around room sizes and adjoining surfaces.</p></article>
 <article><p class="tag">02</p><h3>Trim &amp; baseboards</h3><p>Bring the edges of a room together with coordinated finishing details.</p></article>
