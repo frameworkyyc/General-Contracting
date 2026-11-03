@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <meta name="description" content="Furniture assembly and handyman enquiries in Calgary. Independent Framework website concept.">
-<meta name="demo-revision" content="service-specific-v2">
+<meta name="demo-revision" content="business-branding-v3">
 <title>Krunal Patel | furniture assembly | Calgary</title>
 <link rel="stylesheet" href="style.css">
 <style>
@@ -24,10 +24,53 @@ footer svg { flex-shrink: 0; }
   footer h2 { font-size: clamp(2rem, 9vw, 3rem); overflow-wrap: anywhere; }
 }
 </style>
+<style id="business-theme">
+/* Proposed identity direction based on the business's documented specialty. */
+:root { --ink:#203d3b; --paper:#f9fcfa; --pine:#224a45; --clay:#167368; }
+body { background:#f9fcfa; color:#203d3b; }
+.bar { background:#fff; border-bottom:1px solid #e5f0eb; padding-block:14px; }
+.brand { display:flex; align-items:center; gap:12px; text-decoration:none; letter-spacing:0; min-width:0; }
+.brand-copy { display:flex; flex-direction:column; gap:5px; min-width:0; }
+.brand-title { font-family:'Trebuchet MS', Arial, sans-serif; font-size:clamp(1.15rem,2vw,1.55rem); font-weight:700; line-height:1.12; }
+.brand-detail { font-size:.65rem; font-weight:600; letter-spacing:.06em; line-height:1.5; }
+.brand-logo { display:block; width:166px; height:94px; object-fit:contain; }
+.brand-logo-kings { width:76px; height:88px; }
+.brand-logo-blueform { width:180px; height:104px; }
+.brand-logo-serenity { width:148px; height:98px; }
+.brand-logo-smart { width:166px; height:106px; }
+main h1, main h2 { font-family:'Trebuchet MS', Arial, sans-serif; font-weight:700; }
+main h2 { letter-spacing:-.035em; }
+.hero { background:#224a45; }
+.hero::after { background:linear-gradient(90deg,#224a45f5,#224a45cf 40%,#224a4540); }
+.hero h1 { max-width:16ch; }
+.tag { color:#14675d; }
+.hero .tag, .estimate .tag { color:#c1ede0; }
+main .button { background:#167368; color:#ffffff; border-radius:12px; }
+main a.button:hover { background:#167368; filter:brightness(.93); }
+main .button:disabled { background:#e5f0eb; color:#203d3b; filter:none; }
+a:focus-visible { outline:3px solid #14675d; outline-offset:5px; }
+.hero a:focus-visible, footer a:focus-visible { outline-color:#fff; }
+.materials { background:#e5f0eb; }
+.services article, .choices article { border-color:#167368; }
+.brand-story { background:#f9fcfa; border-bottom:1px solid #e5f0eb; }
+.brand-story-inner { display:grid; grid-template-columns:1fr 2fr; gap:24px; align-items:center; padding-block:28px; }
+.brand-story-inner p { margin:0; }
+.brand-story-inner > p:last-child { font-size:.94rem; max-width:70ch; }
+.estimate { background:#224a45; color:#f9fcfa; }
+.credit { background:#224a45; color:#fff; }
+
+@media (max-width:620px) {
+ .brand-story-inner { grid-template-columns:1fr; gap:12px; padding-block:24px; }
+ .brand { max-width:100%; }
+ .brand-copy { flex:1; }
+ .brand-logo-kings { width:60px; height:70px; flex-shrink:0; }
+ .hero::after { background:linear-gradient(90deg,#224a45f2,#224a45a6); }
+}
+</style>
 </head>
 <body>
 <header class="bar">
-<a class="brand" href="#top">Krunal Patel</a>
+<a class="brand" href="#top"><span class="brand-copy"><span class="brand-title">Krunal Patel</span><span class="brand-detail">Furniture assembly · Calgary</span></span></a>
 <nav aria-label="Main"><a href="#services">Services</a><a href="#materials">Planning</a><a href="#inspiration">Ideas</a></nav>
 </header>
 <main id="top">
@@ -35,15 +78,16 @@ footer svg { flex-shrink: 0; }
 <img src="hero.jpg" alt="" fetchpriority="high">
 <div class="wrap hero-copy">
 <p class="tag">CALGARY, ALBERTA <span> / </span> FURNITURE ASSEMBLY</p>
-<h1 id="headline">From flat-pack to ready to use.</h1>
+<h1 id="headline">New furniture. One less job to do.</h1>
 <p>Furniture assembly and handyman enquiries in Calgary.</p>
 <a class="button" href="#estimate">Request an estimate <span aria-hidden="true">↗</span></a>
 </div>
 <p class="credit">AI-generated design inspiration</p>
 </section>
+<aside class="brand-story"><div class="wrap brand-story-inner"><p class="tag">START WITH THE FURNITURE YOU BOUGHT</p><p>Whether you have bought one bed frame or furniture for several bedrooms, start with the product details. Give Krunal the links, the number of items and a photo of where they need to go.</p></div></aside>
 <section class="wrap section" id="services">
 <p class="tag">01 / SERVICES</p>
-<h2>Make the next improvement count.</h2>
+<h2>From the box to the bedroom.</h2>
 <div class="grid services">
 <article><p class="tag">01</p><h3>Furniture assembly</h3><p>Get help putting together furniture using the supplied parts and instructions.</p></article>
 <article><p class="tag">02</p><h3>Bed-frame assembly</h3><p>Plan the assembly around the room, delivery and the number of items involved.</p></article>
