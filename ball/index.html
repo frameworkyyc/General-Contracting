@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <meta name="description" content="Cabinet veneer, trim and interior woodwork in Calgary. Independent Framework website concept.">
-<meta name="demo-revision" content="service-specific-v2">
+<meta name="demo-revision" content="business-branding-v3">
 <title>Phillips Woodcraft | cabinet updates &amp; finish carpentry | Calgary</title>
 <link rel="stylesheet" href="style.css">
 <style>
@@ -24,10 +24,53 @@ footer svg { flex-shrink: 0; }
   footer h2 { font-size: clamp(2rem, 9vw, 3rem); overflow-wrap: anywhere; }
 }
 </style>
+<style id="business-theme">
+/* Proposed identity direction based on the business's documented specialty. */
+:root { --ink:#382b22; --paper:#fbf6ee; --pine:#3d2f25; --clay:#82502e; }
+body { background:#fbf6ee; color:#382b22; }
+.bar { background:#fff; border-bottom:1px solid #eee2d2; padding-block:14px; }
+.brand { display:flex; align-items:center; gap:12px; text-decoration:none; letter-spacing:0; min-width:0; }
+.brand-copy { display:flex; flex-direction:column; gap:5px; min-width:0; }
+.brand-title { font-family:Georgia, 'Times New Roman', serif; font-size:clamp(1.15rem,2vw,1.55rem); font-weight:500; line-height:1.12; }
+.brand-detail { font-size:.65rem; font-weight:600; letter-spacing:.06em; line-height:1.5; }
+.brand-logo { display:block; width:166px; height:94px; object-fit:contain; }
+.brand-logo-kings { width:76px; height:88px; }
+.brand-logo-blueform { width:180px; height:104px; }
+.brand-logo-serenity { width:148px; height:98px; }
+.brand-logo-smart { width:166px; height:106px; }
+main h1, main h2 { font-family:Georgia, 'Times New Roman', serif; font-weight:500; }
+main h2 { letter-spacing:-.035em; }
+.hero { background:#3d2f25; }
+.hero::after { background:linear-gradient(90deg,#3d2f25f5,#3d2f25cf 40%,#3d2f2540); }
+.hero h1 { max-width:16ch; }
+.tag { color:#754323; }
+.hero .tag, .estimate .tag { color:#edd0a9; }
+main .button { background:#82502e; color:#ffffff; border-radius:0px; }
+main a.button:hover { background:#82502e; filter:brightness(.93); }
+main .button:disabled { background:#eee2d2; color:#382b22; filter:none; }
+a:focus-visible { outline:3px solid #754323; outline-offset:5px; }
+.hero a:focus-visible, footer a:focus-visible { outline-color:#fff; }
+.materials { background:#eee2d2; }
+.services article, .choices article { border-color:#82502e; }
+.brand-story { background:#fbf6ee; border-bottom:1px solid #eee2d2; }
+.brand-story-inner { display:grid; grid-template-columns:1fr 2fr; gap:24px; align-items:center; padding-block:28px; }
+.brand-story-inner p { margin:0; }
+.brand-story-inner > p:last-child { font-size:.94rem; max-width:70ch; }
+.estimate { background:#3d2f25; color:#fbf6ee; }
+.credit { background:#3d2f25; color:#fff; }
+
+@media (max-width:620px) {
+ .brand-story-inner { grid-template-columns:1fr; gap:12px; padding-block:24px; }
+ .brand { max-width:100%; }
+ .brand-copy { flex:1; }
+ .brand-logo-kings { width:60px; height:70px; flex-shrink:0; }
+ .hero::after { background:linear-gradient(90deg,#3d2f25f2,#3d2f25a6); }
+}
+</style>
 </head>
 <body>
 <header class="bar">
-<a class="brand" href="#top">Phillips Woodcraft</a>
+<a class="brand" href="#top"><span class="brand-copy"><span class="brand-title">Phillips Woodcraft</span><span class="brand-detail">Cabinet updates &amp; finish carpentry</span></span></a>
 <nav aria-label="Main"><a href="#services">Services</a><a href="#materials">Planning</a><a href="#inspiration">Ideas</a></nav>
 </header>
 <main id="top">
@@ -35,15 +78,16 @@ footer svg { flex-shrink: 0; }
 <img src="hero.jpg" alt="" fetchpriority="high">
 <div class="wrap hero-copy">
 <p class="tag">CALGARY, ALBERTA <span> / </span> CABINET UPDATES &amp; FINISH CARPENTRY</p>
-<h1 id="headline">It’s all in the finishing.</h1>
+<h1 id="headline">Good woodwork is in the details.</h1>
 <p>Cabinet veneer, trim and interior woodwork in Calgary.</p>
 <a class="button" href="#estimate">Request an estimate <span aria-hidden="true">↗</span></a>
 </div>
 <p class="credit">AI-generated design inspiration</p>
 </section>
+<aside class="brand-story"><div class="wrap brand-story-inner"><p class="tag">FROM THE CABINET SHOP TO YOUR HOME</p><p>Brett brings experience in cabinet shops, finish carpentry and decorative scenic work. Discuss the cabinet updates, trim and smaller woodwork projects that would make a difference in your home.</p></div></aside>
 <section class="wrap section" id="services">
 <p class="tag">01 / SERVICES</p>
-<h2>Make the next improvement count.</h2>
+<h2>Grain, edges and the finishing touch.</h2>
 <div class="grid services">
 <article><p class="tag">01</p><h3>Cabinet updates</h3><p>Refresh exposed cabinet sides with carefully considered veneer and finish details.</p></article>
 <article><p class="tag">02</p><h3>Finish carpentry</h3><p>Plan trim and decorative woodwork to suit the room.</p></article>
