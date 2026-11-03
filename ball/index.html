@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <meta name="description" content="Custom decks, composite decking and fences for Calgary backyards. Independent Framework website concept.">
-<meta name="demo-revision" content="service-specific-v2">
+<meta name="demo-revision" content="business-branding-v3">
 <title>Serenity Construction Ltd. | decks &amp; fences | Calgary</title>
 <link rel="stylesheet" href="style.css">
 <style>
@@ -24,10 +24,53 @@ footer svg { flex-shrink: 0; }
   footer h2 { font-size: clamp(2rem, 9vw, 3rem); overflow-wrap: anywhere; }
 }
 </style>
+<style id="business-theme">
+/* Palette and typography direction inspired by the verified logo at https://yycserenityconstruction.com/ */
+:root { --ink:#373431; --paper:#fcfaf7; --pine:#383531; --clay:#ee9b4c; }
+body { background:#fcfaf7; color:#373431; }
+.bar { background:#fff; border-bottom:1px solid #eee9e3; padding-block:14px; }
+.brand { display:flex; align-items:center; gap:12px; text-decoration:none; letter-spacing:0; min-width:0; }
+.brand-copy { display:flex; flex-direction:column; gap:5px; min-width:0; }
+.brand-title { font-family:'Arial Narrow', Arial, sans-serif; font-size:clamp(1.15rem,2vw,1.55rem); font-weight:800; line-height:1.12; }
+.brand-detail { font-size:.65rem; font-weight:600; letter-spacing:.06em; line-height:1.5; }
+.brand-logo { display:block; width:166px; height:94px; object-fit:contain; }
+.brand-logo-kings { width:76px; height:88px; }
+.brand-logo-blueform { width:180px; height:104px; }
+.brand-logo-serenity { width:148px; height:98px; }
+.brand-logo-smart { width:166px; height:106px; }
+main h1, main h2 { font-family:'Arial Narrow', Arial, sans-serif; font-weight:800; }
+main h2 { letter-spacing:-.035em; }
+.hero { background:#383531; }
+.hero::after { background:linear-gradient(90deg,#383531f5,#383531cf 40%,#38353140); }
+.hero h1 { max-width:16ch; }
+.tag { color:#985015; }
+.hero .tag, .estimate .tag { color:#f3b77f; }
+main .button { background:#ee9b4c; color:#24211d; border-radius:2px; }
+main a.button:hover { background:#ee9b4c; filter:brightness(.93); }
+main .button:disabled { background:#eee9e3; color:#373431; filter:none; }
+a:focus-visible { outline:3px solid #985015; outline-offset:5px; }
+.hero a:focus-visible, footer a:focus-visible { outline-color:#fff; }
+.materials { background:#eee9e3; }
+.services article, .choices article { border-color:#ee9b4c; }
+.brand-story { background:#fcfaf7; border-bottom:1px solid #eee9e3; }
+.brand-story-inner { display:grid; grid-template-columns:1fr 2fr; gap:24px; align-items:center; padding-block:28px; }
+.brand-story-inner p { margin:0; }
+.brand-story-inner > p:last-child { font-size:.94rem; max-width:70ch; }
+.estimate { background:#383531; color:#fcfaf7; }
+.credit { background:#383531; color:#fff; }
+
+@media (max-width:620px) {
+ .brand-story-inner { grid-template-columns:1fr; gap:12px; padding-block:24px; }
+ .brand { max-width:100%; }
+ .brand-copy { flex:1; }
+ .brand-logo-kings { width:60px; height:70px; flex-shrink:0; }
+ .hero::after { background:linear-gradient(90deg,#383531f2,#383531a6); }
+}
+</style>
 </head>
 <body>
 <header class="bar">
-<a class="brand" href="#top">Serenity Construction Ltd.</a>
+<a class="brand" href="#top"><img class="brand-logo brand-logo-serenity" src="logo.webp" alt="Serenity Construction Ltd."></a>
 <nav aria-label="Main"><a href="#services">Services</a><a href="#materials">Planning</a><a href="#inspiration">Ideas</a></nav>
 </header>
 <main id="top">
@@ -35,15 +78,16 @@ footer svg { flex-shrink: 0; }
 <img src="deck.jpg" alt="" fetchpriority="high">
 <div class="wrap hero-copy">
 <p class="tag">CALGARY, ALBERTA <span> / </span> DECKS &amp; FENCES</p>
-<h1 id="headline">Spend more time outside.</h1>
+<h1 id="headline">Find your favourite place outside.</h1>
 <p>Custom decks, composite decking and fences for Calgary backyards.</p>
 <a class="button" href="#estimate">Request an estimate <span aria-hidden="true">↗</span></a>
 </div>
 <p class="credit">AI-generated design inspiration</p>
 </section>
+<aside class="brand-story"><div class="wrap brand-story-inner"><p class="tag">A FOCUS ON COMPOSITE DECKS</p><p>Serenity’s current website puts composite and PVC decking at the centre of its work, from new decks to replacements, railings and accessories. Plan the surface and the details around how you want to spend time outdoors.</p></div></aside>
 <section class="wrap section" id="services">
 <p class="tag">01 / SERVICES</p>
-<h2>Build your time outside around you.</h2>
+<h2>More life, out on the deck.</h2>
 <div class="grid services">
 <article><p class="tag">01</p><h3>Custom decks</h3><p>Consider seating, steps, rails and the connection to your home.</p></article>
 <article><p class="tag">02</p><h3>Fencing</h3><p>Plan privacy, gate access and the way your yard will be used.</p></article>
