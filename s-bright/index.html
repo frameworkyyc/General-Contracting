@@ -17,7 +17,7 @@ h1{font-size:clamp(3.4rem,7.5vw,7rem);max-width:9ch}
 h2{font-size:clamp(2.4rem,5vw,4.8rem);max-width:16ch}
 h3{font-size:1.25rem;line-height:1.2}
 p{max-width:62ch}
-img{display:block;width:100%;object-fit:cover}
+img{display:block;width:100%;height:auto;object-fit:cover}
 .wrap{width:min(1180px,calc(100% - 48px));margin:auto}
 .section{padding-block:clamp(58px,8vw,110px)}
 .tag{font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;font-weight:800;margin-bottom:17px}
@@ -30,7 +30,7 @@ nav{display:flex;align-items:center;gap:24px;font-size:.85rem;font-weight:700}
 nav a{text-decoration:none}nav a:hover{text-decoration:underline}
 nav a:last-child{border:1px solid var(--forest);padding:7px 12px}
 .hero{background:var(--forest);color:var(--cream)}
-.hero-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:clamp(26px,5vw,74px);padding-block:clamp(48px,7vw,96px)}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:clamp(26px,5vw,74px);padding-block:clamp(44px,5vw,68px)}
 .hero h1 em{color:var(--lime);font-weight:400}
 .hero .tag{color:var(--lime)}
 .hero-copy>p:not(.tag){margin-top:23px;font-size:1.1rem;max-width:37ch}
@@ -102,11 +102,11 @@ nav{width:100%;justify-content:space-between;gap:8px;font-size:.76rem}nav a:last
 <section class="wrap section split"><div><p class="tag">03 / Before you call</p><h2>Start at the back door.</h2><p class="intro">A few photos and rough dimensions can give Scott a clearer picture of what will fit your space.</p></div>
 <ol class="checklist"><li><div><strong>Show the layout</strong>Take a wide photo from the house and another from the far end of the yard.</div></li><li><div><strong>Note slopes and access</strong>Include steps, narrow gates and spots where water collects after snowmelt or rain.</div></li><li><div><strong>Decide what stays</strong>Point out trees, fences and surfaces you want to keep, plus what you’d most like to change.</div></li></ol></section>
 <section class="estimate" id="estimate"><div class="wrap section split"><div><p class="tag">04 / Your yard</p><h2>Let’s talk about your project.</h2><p class="intro">Use the planner to put your ideas into a short brief. Copy it for your next conversation with Scott.</p><p class="contact"><a href="tel:+14038600337">Call Scott · 403-860-0337</a></p><p><a href="sms:+14038600337">Text Scott</a></p></div>
-<form id="project-form" method="dialog" aria-label="Tile project planner" aria-describedby="form-note">
+<form id="project-form" method="dialog" aria-label="Yard project planner" aria-describedby="form-note">
 <h3>Build your project brief</h3>
 <label>Calgary neighbourhood<input id="area" placeholder="e.g. Bowness"></label>
 <label>Project type<select id="project-type" required><option value="">Choose a project type</option><option>Landscaping and sod</option><option>Patio and hardscaping</option><option>Decks and fencing</option><option>Whole-yard refresh</option></select></label>
-<label>Approximate size<input id="size" placeholder="e.g. 35 sq. ft. or 5 × 8 ft."></label>
+<label>Approximate size<input id="size" placeholder="e.g. 12 × 16 ft. patio"></label>
 <label>What are you changing?<textarea id="notes" rows="3" placeholder="e.g. Replace the patio and keep the mature trees"></textarea></label>
 <button type="submit" class="button" id="brief-button">Create project brief</button>
 <div id="brief-result" hidden>
