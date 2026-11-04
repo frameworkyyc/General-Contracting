@@ -1,0 +1,8 @@
+{
+  "name": "contracting",
+  "compatibility_date": "2026-11-02",
+  "previews": {},
+  "assets": {
+    "directory": "./falconer"
+  }
+}
